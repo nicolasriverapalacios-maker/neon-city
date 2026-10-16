@@ -2,11 +2,16 @@
 
 Experiencia 3D de exploración orbital construida con React, Three.js, React Three Fiber, Drei y Vite. La ciudad y sus texturas se generan localmente; no necesita cuentas, claves, modelos remotos ni servicios externos.
 
+**Abrir la experiencia:** https://nicolasriverapalacios-maker.github.io/neon-city/
+
+**Mapa de Graphify:** https://nicolasriverapalacios-maker.github.io/neon-city/graphify-out/graph.html
+
 ## Ejecutar
 
 Requiere Node.js 22.12+ o 24+ y npm.
 
 ```powershell
+git clone https://github.com/nicolasriverapalacios-maker/neon-city.git
 cd neon-city
 npm ci
 npm run dev -- --port 5173
@@ -20,7 +25,7 @@ npm run build
 npm run preview -- --port 4173
 ```
 
-La compilación estática queda en `dist/`. Para un hosting que sirva desde una subcarpeta, compilar con `npm run build -- --base=./` y adaptar las rutas absolutas de fuentes/favicon si el hosting no sirve desde su raíz.
+La compilación estática queda en `dist/`. GitHub Actions ejecuta las pruebas y publica automáticamente cada cambio en `main` con la base `/neon-city/` de GitHub Pages.
 
 ## Explorar
 
